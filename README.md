@@ -3,7 +3,8 @@ This is an framework type, My code should scan an array if there's word or not. 
 Its not that hard to get
 
 
-*Just learn below things:-
+*Just learn below things
+
 -Express js, send/post/delete/port
 -prompt(to take input) and u can pretty much guess how made it possible for res to be a sentence, just add description to new properties 
 -basic If & Else Statements which is fundamental
