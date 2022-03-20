@@ -45,6 +45,7 @@ b();
 
 const express = require('express');
 const app = express()
+
 const prompt = require('prompt');
 const nemo = (nems) => {
   prompt.start()
@@ -63,6 +64,7 @@ const nemo = (nems) => {
           console.log('An error be noice ' + err);
     })
 .then((res) => {
+      
 if(res['word'] == 1) {
  dictionary.push(res['hemlo'])
  console.log(('The word has been added: ') + res['word'])
@@ -82,5 +84,6 @@ if(res['word'] == 1) {
  app.get('/nemo', (req, res) => { res.send(nemo())
  }
 );
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`listening to ${port}...`))
